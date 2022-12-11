@@ -140,7 +140,7 @@ void loop()
           }
           else
           {
-            currentLine = "";// if you got a newline, then clear currentLine
+            currentLine = ""; // if you got a newline, then clear currentLine
           }
         }
         else if (c != '\r') // if you got anything else but a carriage return character, add it to the end of the currentLine
