@@ -23,7 +23,7 @@ const int s3 = 17;
 
 void setup() // Setup function
 {
-  Serial.begin(9600); // Initialize the serial monitor
+  Serial.begin(115200); // Initialize the serial monitor
 
   // initialize the pins as inpu/output
   pinMode(s1, INPUT_PULLUP);

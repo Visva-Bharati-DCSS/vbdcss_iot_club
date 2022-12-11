@@ -19,7 +19,7 @@ const int s1 = 0;
 
 void setup()
 {
-  Serial.begin(9600);        // Initialize the serial monitor
+  Serial.begin(115200);        // Initialize the serial monitor
   pinMode(s1, INPUT_PULLUP); // Set the switch pin as input
 }
 

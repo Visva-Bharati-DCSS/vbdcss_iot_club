@@ -31,7 +31,7 @@ int st4 = LOW;
 void setup()
 {
   // Initialize the serial monitor
-  Serial.begin(9600);
+  Serial.begin(115200);
   // initialize the pins as input/output
   pinMode(s1, INPUT_PULLUP);
   pinMode(s2, INPUT_PULLUP);

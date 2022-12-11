@@ -48,7 +48,7 @@ const int s3 = 4;  // reservoir
 void setup()
 {
   // initialize the serial monitor
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   // initialize the LCD
   lcd.begin(16, 2);

@@ -49,7 +49,7 @@ void setup()
 {
 
   // initialize the serial port
-  Serial.begin(9600);
+  Serial.begin(115200);
   // initialize the LCD
   lcd.begin(16, 2);
 
