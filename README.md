@@ -1,1 +1,1 @@
-# vbdcss_iot_club
+# VBDCSS IoT Club
