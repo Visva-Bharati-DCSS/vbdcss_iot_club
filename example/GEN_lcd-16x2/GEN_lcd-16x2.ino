@@ -34,6 +34,6 @@ void setup()
 
 void loop()
 {
-  lcd.setCursor(0, 1)             // Set the cursor to column 0, line 1
-      lcd.print(millis() / 1000); // Print the number of seconds since the Arduino board began running the current program
+  lcd.setCursor(0, 1);        // Set the cursor to column 0, line 1
+  lcd.print(millis() / 1000); // Print the number of seconds since the Arduino board began running the current program
 }
