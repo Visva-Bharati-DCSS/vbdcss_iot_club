@@ -15,8 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // network credentials
-const char *ssid = "SSID";    // Enter SSID here
-const char *password = "PSK"; // Enter Password here
+const char *ssid = "No Internet Mesh";    // Enter SSID here
+const char *password = "hcWCpHt9hJu6EsyQrUHRxvRESVux8qNKPTRMEzspgyFkhC7WeCyr6G2S3w"; // Enter Password here
 
 // required libraries
 #include <WiFi.h>
