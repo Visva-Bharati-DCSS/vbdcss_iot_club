@@ -23,8 +23,8 @@
 // Web Server
 
 // SSID and Password of th WiFi router
-const char *ssid = "ROG-G15 1780";
-const char *password = "4B67r500";
+const char *ssid = "ROG-G15";
+const char *password = "12345678";
 
 // set web server port
 WiFiServer server(80);

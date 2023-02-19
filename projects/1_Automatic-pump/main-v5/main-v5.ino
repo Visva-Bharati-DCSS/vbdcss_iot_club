@@ -21,8 +21,8 @@
 #include <WiFi.h>
 
 // SSID and Password of the WiFi router
-const char *ssid = "ROG-G15 1780";
-const char *password = "4B67r500";
+const char *ssid = "ROG-G15";
+const char *password = "12345678";
 
 // set web server port
 WiFiServer server(80);
@@ -207,29 +207,26 @@ void pump_control()
   st4 = digitalRead(r1);
 
   // calling the status function to display the status
-  status(st1, st2, st3);
+  status(st1, st2, st3, st4);
 
   // condition check
   if (st3 == LOW)
   {
-    Serial.println("Reservoir Water Level Low");
     digitalWrite(r1, LOW);
     goto END;
   }
 
   // condition check
-  if (st2 == HIGH)
+  if (st1 == HIGH & st2 == HIGH)
   {
-    Serial.println("Pump turned ON");
+    digitalWrite(r1, LOW);
+    goto END;
+  }
+
+  // condition check
+  if (st1 == LOW & st2 == LOW)
+  {
     digitalWrite(r1, HIGH);
-    goto END;
-  }
-
-  // condition check
-  if (st1 == LOW)
-  {
-    Serial.println("Pump turned OFF");
-    digitalWrite(r1, LOW);
   }
 
 END:
@@ -238,11 +235,11 @@ END:
   lcd.setCursor(15, 1);
   // display the status heart
   lcd.write(byte(7));
-  delay(5000);
+  delay(500);
 }
 
 // function to display/update the status
-void status(int s1, int s2, int s3)
+void status(int s1, int s2, int s3, int r1)
 {
   if (s1 == HIGH)
   {
