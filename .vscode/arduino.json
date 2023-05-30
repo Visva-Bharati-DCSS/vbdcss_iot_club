@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "COM4",
+    "programmer": "arduinoisp",
+    "sketch": "example\\DHT11\\DHT11.ino"
+}
