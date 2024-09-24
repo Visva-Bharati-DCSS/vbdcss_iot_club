@@ -1,0 +1,3 @@
+[submodule "projects/hans/iot_car"]
+	path = projects/hans/iot_car
+	url = https://github.com/duskygloom/iot_car
